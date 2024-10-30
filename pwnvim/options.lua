@@ -149,7 +149,7 @@ M.defaults = function()
 
   -- map the leader key
   vim.api.nvim_set_keymap('n', ',', '', {}) -- first unset it though
-  vim.g.mapleader = ' '                     -- Namespace for custom shortcuts
+  vim.g.mapleader = ','                     -- Namespace for custom shortcuts
 
   vim.api.nvim_exec([[
     filetype plugin indent on
@@ -203,7 +203,6 @@ M.colors_cat = function()
       lsp_trouble = true,
       telescope = { enabled = true },
       which_key = true,
-      undotree = true
       -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
     custom_highlights = function(colors)
