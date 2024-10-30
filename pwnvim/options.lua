@@ -203,6 +203,7 @@ M.colors_cat = function()
       lsp_trouble = true,
       telescope = { enabled = true },
       which_key = true,
+      undotree = true
       -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
     custom_highlights = function(colors)
