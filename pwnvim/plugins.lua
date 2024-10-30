@@ -55,6 +55,7 @@ M.ui = function()
     clearjumps_on_change = true,
     autopush = false
   })
+  require("undotree").setup({})
 
   if not SimpleUI then
     require("colorizer").setup({})
