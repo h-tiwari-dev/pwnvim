@@ -158,7 +158,6 @@
           rustfmt
           cargo # have this as a fallback when a local flake isn't in place
           rustc # have this as a fallback when a local flake isn't in place
-          undotree
           # TODO: add back the following when https://github.com/NixOS/nixpkgs/issues/202507 hits
           #llvm # for debugging rust
           #lldb # for debugging rust
