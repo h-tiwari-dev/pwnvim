@@ -374,11 +374,7 @@ M.config = function()
   end, "Open folder")
 
   -- Map <leader>u to toggle the UndoTree plugin, allowing undo history visualization
-  M.mapleadernv("u", require('undotree').toggle, "Toggle UndoTree")
-  -- Map <leader>uo to open the UndoTree explicitly
-  M.mapleadernv("uo", require('undotree').open, "Open UndoTree")
-  -- Map <leader>uc to close the UndoTree explicitly
-  M.mapleadernv("uc", require('undotree').close, "Close UndoTree")
+  M.mapleadernv("u", "UndotreeToggle", "Toggle UndoTree")
 
 
   -- Quickly change indent defaults in a file
