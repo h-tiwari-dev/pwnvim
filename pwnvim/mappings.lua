@@ -341,13 +341,16 @@ M.config = function()
 
   M.mapleadernv("q", "TroubleToggle", "Toggle trouble quicklist")
 
-  M.mapleadernv( "xx", "<cmd>Trouble diagnostics toggle<cr>", "Diagnostics (Trouble)")
-  M.mapleadernv( "xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", "Buffer Diagnostics (Trouble)")
-  M.mapleadernv( "cs", "<cmd>Trouble symbols toggle focus=false<cr>", "Symbols (Trouble)")
-  M.mapleadernv( "cl", "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+  M.mapleadernv("xx", "<cmd>Trouble diagnostics toggle<cr>", "Diagnostics (Trouble)")
+  M.mapleadernv("xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", "Buffer Diagnostics (Trouble)")
+  M.mapleadernv("cs", "<cmd>Trouble symbols toggle focus=false<cr>", "Symbols (Trouble)")
+  M.mapleadernv("cl", "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
     "LSP Definitions / references / ... (Trouble)")
-  M.mapleadernv( "xL", "<cmd>Trouble loclist toggle<cr>", "Location List (Trouble)")
- M.mapleadernv( "xQ", "<cmd>Trouble qflist toggle<cr>", "Quickfix List (Trouble)")
+  M.mapleadernv("xL", "<cmd>Trouble loclist toggle<cr>", "Location List (Trouble)")
+  M.mapleadernv("xQ", "<cmd>Trouble qflist toggle<cr>", "Quickfix List (Trouble)")
+
+  M.mapleadernv("lg", "<cmd>LazyGit<cr>", "LazyGit")
+
 
   M.mapleadernv("fb",
     function() require('telescope.builtin').buffers(require('telescope.themes').get_dropdown { previewer = false }) end,

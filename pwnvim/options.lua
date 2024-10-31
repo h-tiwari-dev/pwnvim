@@ -300,6 +300,7 @@ M.colors_onedark = function()
   vim.o.background = "dark"
 
   if not SimpleUI then
+    print("Using One Dark Pro")
     require("onedarkpro").setup({
       -- Call :OnedarkproCache if you make changes below and to speed startups
       caching = true,
@@ -394,10 +395,10 @@ M.colors_onedark = function()
 
         ["@markup.list.checked"] = { fg = "${green}", bold = true },
 
-        -- TelescopeBorder = {
-        --   fg = "${telescope_results}",
-        --   bg = "${telescope_results}"
-        -- },
+        TelescopeBorder = {
+          fg = "${telescope_results}",
+          bg = "${telescope_results}"
+        },
         -- TelescopePromptBorder = {
         --   fg = "${telescope_prompt}",
         --   bg = "${telescope_prompt}"
@@ -414,7 +415,7 @@ M.colors_onedark = function()
         -- },
 
         -- TelescopeMatching = { fg = "${blue}" },
-        -- TelescopeNormal = { bg = "#000000" },
+        TelescopeNormal = { bg = "none" },
         -- TelescopeSelection = { bg = "${telescope_prompt}" },
         -- PmenuSel = { blend = 0 },
       },
@@ -437,8 +438,8 @@ M.colors_onedark = function()
           -- Make neovide have a more distinctive blue bg color
           bg = (vim.g.neovide and "#16233B" or "#282c34"),
           cursorline = (vim.g.neovide and "#131F34" or "#2d313b"),
-          -- telescope_prompt = "#2e323a",
-          -- telescope_results = "#21252d"
+          telescope_prompt = "#2e323a",
+          telescope_results = "#21252d"
         },
         -- onelight = { telescope_prompt = "#f5f5f5", telescope_results = "#eeeeee" }
       }
