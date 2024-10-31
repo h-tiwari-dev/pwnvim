@@ -340,13 +340,14 @@ M.config = function()
   M.mapleadernv("x", "Bdelete!", "Close buffer")
 
   M.mapleadernv("q", "TroubleToggle", "Toggle trouble quicklist")
-  M.mapleadernv("n", "xx", "<cmd>Trouble diagnostics toggle<cr>", "Diagnostics (Trouble)")
-  M.mapleadernv("n", "xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", "Buffer Diagnostics (Trouble)")
-  M.mapleadernv("n", "cs", "<cmd>Trouble symbols toggle focus=false<cr>", "Symbols (Trouble)")
-  M.mapleadernv("n", "cl", "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+
+  M.mapleadernv( "xx", "<cmd>Trouble diagnostics toggle<cr>", "Diagnostics (Trouble)")
+  M.mapleadernv( "xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", "Buffer Diagnostics (Trouble)")
+  M.mapleadernv( "cs", "<cmd>Trouble symbols toggle focus=false<cr>", "Symbols (Trouble)")
+  M.mapleadernv( "cl", "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
     "LSP Definitions / references / ... (Trouble)")
-  M.mapleadernv("n", "xL", "<cmd>Trouble loclist toggle<cr>", "Location List (Trouble)")
-  M.mapleadernv("n", "xQ", "<cmd>Trouble qflist toggle<cr>", "Quickfix List (Trouble)")
+  M.mapleadernv( "xL", "<cmd>Trouble loclist toggle<cr>", "Location List (Trouble)")
+ M.mapleadernv( "xQ", "<cmd>Trouble qflist toggle<cr>", "Quickfix List (Trouble)")
 
   M.mapleadernv("fb",
     function() require('telescope.builtin').buffers(require('telescope.themes').get_dropdown { previewer = false }) end,
