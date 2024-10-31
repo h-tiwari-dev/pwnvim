@@ -225,7 +225,6 @@
           nvim-web-devicons # makes things pretty; used by many plugins below
           oil-nvim # file navigator
           undotree
-          lazygit-nvim
           git-worktree-nvim # jump between worktrees
           gitsigns-nvim # git status in gutter
           # symbols-outline-nvim # navigate the current file better
