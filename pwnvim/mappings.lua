@@ -337,7 +337,7 @@ M.config = function()
 
   M.mapleadernv("e", "Oil", "Find current file in file browser")
   M.mapleadernv("/", "nohlsearch", "Clear highlight")
-  M.mapleadernv("x", "Bdelete!", "Close buffer")
+  M.mapleadernv("xd", "Bdelete!", "Close buffer")
 
   M.mapleadernv("q", "TroubleToggle", "Toggle trouble quicklist")
 
