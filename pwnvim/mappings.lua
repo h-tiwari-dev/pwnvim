@@ -339,7 +339,7 @@ M.config = function()
   M.mapleadernv("/", "nohlsearch", "Clear highlight")
   M.mapleadernv("xd", "Bdelete!", "Close buffer")
 
-  M.mapleadernv("q", "TroubleToggle", "Toggle trouble quicklist")
+  M.mapleadernv("q", "Trouble quickfix", "Toggle trouble quicklist")
 
   M.mapleadernv("xx", "<cmd>Trouble diagnostics toggle<cr>", "Diagnostics (Trouble)")
   M.mapleadernv("xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", "Buffer Diagnostics (Trouble)")
@@ -375,10 +375,13 @@ M.config = function()
     "Todos")
   M.mapleadernv("fz", function()
     require("pwnvim.plugins").telescope_get_folder_common_folders({
-      ".config", "src/sideprojects", "src/icl", "src/icl/website.worktree", "src/personal", "src/gh",
-      "Sync/Private", "Sync/Private/Finances", "Sync/IronCore Docs", "Sync/IronCore Docs/Legal",
-      "Sync/IronCore Docs/Finances", "Sync/IronCore Docs/Design",
-      "Notes", "Notes/Notes", "Notes/Notes/meetings"
+      ".config",
+      "~/src/nixos-config", "~/src/pwnvim",
+      "~/dev/kusho/backend",
+      "~/dev/kusho/kusho-ai-docs",
+      "~/dev/kusho/nvim-plugin",
+      "~/dev/kusho/frontend",
+      "~/dev/kusho/frontend/kusho-new-dashboard",
     }, 1, function(folder)
       vim.cmd.lcd(folder)
       require("oil").open(folder) -- if we bail on picking a file, we have the file browser as fallback

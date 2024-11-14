@@ -210,6 +210,7 @@
           vim-matchup # replaces built-in matchit and matchparen with better matching and faster
           nvim-lightbulb # show code actions
           nvim-code-action-menu # add extra details to code actions incl. diffs
+          rest-nvim
 
           # UI #################################################
           onedarkpro-nvim # colorscheme
