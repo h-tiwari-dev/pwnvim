@@ -376,12 +376,12 @@ M.config = function()
   M.mapleadernv("fz", function()
     require("pwnvim.plugins").telescope_get_folder_common_folders({
       ".config",
-      "~/src/nixos-config", "~/src/pwnvim",
-      "~/dev/kusho/backend",
-      "~/dev/kusho/kusho-ai-docs",
-      "~/dev/kusho/nvim-plugin",
-      "~/dev/kusho/frontend",
-      "~/dev/kusho/frontend/kusho-new-dashboard"
+      "src/nixos-config", "src/pwnvim",
+      "dev/kusho/backend",
+      "dev/kusho/kusho-ai-docs",
+      "dev/kusho/nvim-plugin",
+      "dev/kusho/frontend",
+      "dev/kusho/frontend/kusho-new-dashboard"
     }, 1, function(folder)
       vim.cmd.lcd(folder)
       require("oil").open(folder) -- if we bail on picking a file, we have the file browser as fallback
