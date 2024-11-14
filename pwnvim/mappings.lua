@@ -381,7 +381,7 @@ M.config = function()
       "~/dev/kusho/kusho-ai-docs",
       "~/dev/kusho/nvim-plugin",
       "~/dev/kusho/frontend",
-      "~/dev/kusho/frontend/kusho-new-dashboard",
+      "~/dev/kusho/frontend/kusho-new-dashboard"
     }, 1, function(folder)
       vim.cmd.lcd(folder)
       require("oil").open(folder) -- if we bail on picking a file, we have the file browser as fallback
